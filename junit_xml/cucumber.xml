@@ -1,11 +1,53 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="12.112">
-    <testcase classname="user login" name="login to the application as admin" time="11.622">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="12.233">
+    <testcase classname="user login" name="login to the application as admin" time="11.569">
         <system-out>
             <![CDATA[Given I am on the login page................................................passed
 When i use following admin credential.......................................passed
 And click on login button...................................................passed
 Then I should be able to login..............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Calculator" name="Add two number 2 and 5" time="0.055">
+        <system-out>
+            <![CDATA[Given I have a calculator...................................................passed
+When I have 2 and 5.........................................................passed
+Then The result should be 7.................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Calculator" name="Add two number 10 and -5" time="0.015">
+        <system-out>
+            <![CDATA[Given I have a calculator...................................................passed
+When I have 10 and -5.......................................................passed
+Then The result should be 5.................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Calculator" name="Add two number 99 and 1" time="0.016">
+        <system-out>
+            <![CDATA[Given I have a calculator...................................................passed
+When I have 99 and 1........................................................passed
+Then The result should be 100...............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Register new account" name="register multiple users" time="0.021">
+        <system-out>
+            <![CDATA[Given user is on the register page..........................................passed
+When user fill out the registration form....................................passed
+And click on Register button on the page....................................passed
+Then a new account should be created........................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Register new account" name="create multiple users account" time="0.041">
+        <system-out>
+            <![CDATA[Given user is on the register page..........................................passed
+When user enters "male","James","Harden","19","june","1990","j.harden@gmail.com","pass123".passed
+And click on Register button on the page....................................passed
+Then a new account should be created........................................passed
 ]]>
         </system-out>
     </testcase>

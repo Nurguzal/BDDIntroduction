@@ -11,7 +11,7 @@ Feature: user login
       #And click on login button
       #Then I should be able to login
 
-  @smoke
+  #@smoke
   Scenario: login to the application as admin
     Given I am on the login page
     When i use following admin credential
